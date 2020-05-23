@@ -1,10 +1,13 @@
-import React, { Component } from "react";
+import React, { Component } from 'react';
+import "./App.css";
+import Feature from "./feature";
 
-export class App extends Component {
-render() {
+class  extends Component {
+  state = {  }
+  render() { 
+    return ( 
 
-  return(
-  
+      <React.Fragment>
     <div className="App">
     <p>Contact Information</p>
     <div>
@@ -24,9 +27,14 @@ render() {
     <input type="submit" value="Submit" />
     </form>
     </div>
-    </div>
-  )
-}
-}
 
+    
+    </div>
+    <hr />
+    <Feature/>
+      </React.Fragment>
+     );
+  }
+}
+ 
 export default App;
